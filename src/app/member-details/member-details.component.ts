@@ -22,6 +22,7 @@ export class MemberDetailsComponent implements OnInit {
     private location: Location
   ) { }
 
+  //Dynamic routing. This gets the specific object from Firebase
   ngOnInit() {
     this.router.params.forEach((urlParameters) => {
      this.memberId = urlParameters['id'];

@@ -18,10 +18,12 @@ export class MembersComponent implements OnInit {
     private router: Router, private memberService: MemberService
   ) { }
 
+  //All current users in Firebase
   ngOnInit() {
     this.users = this.memberService.getUsers();
   }
 
+  //route navigation for dynamic routing
   goToProfile(user) {
     this.router.navigate(['members', user.$key])
   }

@@ -1,19 +1,23 @@
 <h4>Edit Member</h4>
-
-<label>Name:</label>
-<input [(ngModel)]="selectedMember.name">
-<br>
-
-<label>Role:</label>
-<input [(ngModel)]="selectedMember.role">
-<br>
-
-<label>Tier:</label>
-<input [(ngModel)]="selectedMember.tier">
-<br>
-
-<label>Description:</label>
-<input [(ngModel)]="selectedMember.description">
-<br>
-<button (click)="updateMember(selectedMember)" name="button">Update</button>
-<button (click)="deleteMember(selectedMember)" name="button">Delete</button>
+<div class="flex-area">
+  <div>
+    <label>Name:</label>
+    <input [(ngModel)]="selectedMember.name">
+  </div>
+  <div>
+    <label>Role:</label>
+    <input [(ngModel)]="selectedMember.role">
+  </div>
+  <div>
+    <label>Tier:</label>
+    <input [(ngModel)]="selectedMember.tier">
+  </div>
+  <div>
+    <label>Description:</label>
+    <input [(ngModel)]="selectedMember.description">
+  </div>
+  <div>
+    <button (click)="updateMember(selectedMember)" name="button">Update</button>
+    <button (click)="deleteMember(selectedMember)" name="button">Delete</button>
+  </div>
+</div>

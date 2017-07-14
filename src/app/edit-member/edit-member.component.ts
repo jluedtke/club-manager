@@ -19,12 +19,15 @@ export class EditMemberComponent implements OnInit {
   ngOnInit() {
   }
 
+  //HTML form submission, calls memberService to update in Firebase
   updateMember(user: User) {
     this.memberService.updateUser(user);
   }
-  deleteMember(user: User) {
+
+  //HTML form submission, calls memberService to delete in Firebase
+    deleteMember(user: User) {
     if (confirm("Are you sure you want to delete this user? Leaving is a capital punishment. This will unleash the drones.")) {
-      this.memberService.deleteUser(user);    
+      this.memberService.deleteUser(user);
     }
   }
 }

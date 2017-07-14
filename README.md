@@ -10,7 +10,7 @@
 | Program can display a list of all available users. | "View All" | User 1, User2 | Program must be able to display users before any editing or adding can be made. |
 | Program can edit users. | User 1, User2 --> User3 | User 1, User3 | It's easier to change existing users than adding new ones completely. |
 | Program can add a new user to the list. | User3 | User 1, User2, User3 | Basic functionality of adding and editing must be completed before implementing the filter. |
-| Program can filter users based off of Tier within Order. | "View Tier 1" | User 1, User3, User4 | The filter is implemented once basic functionality is created. |
+| Program can delete users | "Delete User1" | User2, User3, User4 | Full CRUD ops initiated. |
 
 
 ## Setup/Installation Requirements

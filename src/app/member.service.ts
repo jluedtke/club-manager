@@ -32,8 +32,6 @@ export class MemberService {
   //update entries in Firebase
   updateUser(localUpdatedUser) {
     var userEntryInFireBase = this.getUserById(localUpdatedUser.$key);
-
-    console.log(userEntryInFireBase);
     userEntryInFireBase.update({
       name: localUpdatedUser.name,
       role: localUpdatedUser.role,
