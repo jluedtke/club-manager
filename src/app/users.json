@@ -1,0 +1,40 @@
+{
+   "users":[
+      {
+         "name":"Dwayne Johnson",
+         "tier":"The One",
+         "role":"The Big Cheese",
+         "description":"A mere man, but an immortal legend."
+      },
+      {
+         "name":"Jared Luedtke",
+         "tier":"Archon",
+         "role":"High Archon of the Order",
+         "description":"Moana was dope."
+      },
+      {
+         "name":"Ryan Susag",
+         "tier":"Apprentice",
+         "role":"Initiate",
+         "description":"He appeared out of nowhere. Wednesday, we had one initiate, Thursday, two. No one questioned why. No one will question why."
+      },
+      {
+         "name":"Jeremy Rueb",
+         "tier":"Apprentice",
+         "role":"Initiate",
+         "description":"Likes playing basketball."
+      },
+      {
+         "name":"Andy Windom",
+         "tier":"Archon",
+         "role":"The Chef",
+         "description":"It is said that Andy cooked his first masterpiece in the late 1700's. Seven people tasted it and became so inspired they made a country."
+      },
+      {
+         "name":"Kyle Wilson",
+         "tier":"Archon",
+         "role":"Dwayne Enthusiast",
+         "description":"Also likes playing basketball."
+      }
+   ]
+}
