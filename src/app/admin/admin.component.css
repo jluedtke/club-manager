@@ -1,0 +1,33 @@
+* {
+  text-align: center;
+}
+
+input, select {
+  color: #232323;
+  width: 100%;
+}
+
+label {
+  font-size: 28px;
+}
+
+button {
+  font-size: 20px;
+  margin: 4px;
+  padding: 4px 0px;
+  width: 100%;
+  color: #FAFFFD;
+  background-color: #274249;
+  border: none;
+}
+
+button:hover {
+  color: #274249;
+  background-color: #FAFFFD;
+}
+
+.flex-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

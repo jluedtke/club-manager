@@ -1,20 +1,26 @@
 <h3>New Member</h3>
+<div class="flex-area">
+  <div>
+    <label>Name:</label>
+    <input type="text" #newName>
+  </div>
+  <div>
+    <label>Role:</label>
+    <input type="text" #newRole>
+  </div>
+  <div>
+    <label>Tier:</label>
+    <select #newTier>
+      <option value="Archon">Archon</option>
+      <option value="Apprentice" selected="selected">Apprentice</option>
+    </select>
+  </div>
+  <div>
+    <label>Description:</label>
+    <input type="textarea" #newDescription>
+  </div>
+</div>
 <div>
-  <label>Name:</label>
-  <input type="text" #newName>
-  <br>
-  <label>Role:</label>
-  <input type="text" #newRole>
-  <br>
-  <label>Tier:</label>
-  <select #newTier>
-    <option value="Archon">Archon</option>
-    <option value="Apprentice" selected="selected">Apprentice</option>
-  </select>
-  <br>
-  <label>Description:</label>
-  <input type="textarea" #newDescription>
-  <br>
   <button type="button" (click)="submitForm(newName.value, newRole.value, newTier.value, newDescription.value); newName.value=''; newRole.value=''; newDescription.value='';">Submit</button>
 </div>
 

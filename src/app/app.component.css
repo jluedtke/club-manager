@@ -2,7 +2,7 @@
   background-color: #274249;
   color: #FAFFFD;
   padding: 20px;
-  height: 100%;
+  min-height: 100%;
 }
 
 .navigation {

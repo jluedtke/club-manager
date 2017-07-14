@@ -2,12 +2,15 @@
 <hr>
 
 <div *ngFor="let user of users | async" >
-  <h3>{{user.name}}</h3>
-  <h4>{{user.tier}}</h4>
-  <p class="link" *ngIf="currentRoute !== '/admin'" (click)="goToProfile(user)"><a>View Profile</a></p>
-  <div *ngIf="currentRoute === '/admin'">
-    <p >{{user.description}}</p>
-    <app-edit-member [selectedMember]="user"></app-edit-member>
+  <div class="flex-area" >
+    <div class="info left">
+      <h3>{{user.name}}</h3>
+      <h4>{{user.tier}}</h4>
+      <p class="link" (click)="goToProfile(user)"><a>View Profile</a></p>
+    </div>
+    <div class="info right" *ngIf="currentRoute === '/admin'">
+      <app-edit-member [selectedMember]="user"></app-edit-member>
+    </div>
   </div>
   <hr>
 </div>

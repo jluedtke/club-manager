@@ -1,19 +1,19 @@
 <h4>Edit Member</h4>
 
-<label>New Member Name:</label>
+<label>Name:</label>
 <input [(ngModel)]="selectedMember.name">
 <br>
 
-<label>New Member Role:</label>
+<label>Role:</label>
 <input [(ngModel)]="selectedMember.role">
 <br>
 
-<label>New Member Tier:</label>
+<label>Tier:</label>
 <input [(ngModel)]="selectedMember.tier">
 <br>
 
-<label>New Member Description:</label>
+<label>Description:</label>
 <input [(ngModel)]="selectedMember.description">
-
+<br>
 <button (click)="updateMember(selectedMember)" name="button">Update</button>
 <button (click)="deleteMember(selectedMember)" name="button">Delete</button>
