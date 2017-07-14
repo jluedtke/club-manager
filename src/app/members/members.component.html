@@ -1,8 +1,9 @@
 <h2>Members</h2>
 <hr>
 
-<div *ngFor="let user of users | async">
+<div *ngFor="let user of users | async" >
   <h3>{{user.name}}</h3>
   <h4>{{user.tier}}</h4>
+  <p (click)="goToProfile(user)"><a>View Profile</a></p>
   <hr>
 </div>

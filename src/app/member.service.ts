@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Users } from './user.model';
+import { User } from './user.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -14,6 +14,21 @@ export class MemberService {
 
   getUsers() {
     return this.users;
+  }
+
+  getUserById(memberId: string) {
+  return this.database.object('members/' + memberId);
+  }
+
+  getUserByMatchedId(memberId: string) {
+    return this.users.subscribe(user => {
+      user.forEach(data => {
+        if (data.$key === memberId) {
+          console.log(data);
+          return data;
+        }
+      });
+    });
   }
 
 }
