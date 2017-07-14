@@ -1,7 +1,7 @@
 <div>
-  <h2>{{memberToDisplay?.name}}</h2>
-  <h3>{{memberToDisplay?.role}}</h3>
-  <h4>{{memberToDisplay?.tier}}</h4>
-  <p>{{memberToDisplay?.description}}</p>
+  <h2>{{(memberToDisplay | async)?.name}}</h2>
+  <h3>{{(memberToDisplay | async)?.role}}</h3>
+  <h4>{{(memberToDisplay | async)?.tier}}</h4>
+  <p>{{(memberToDisplay | async)?.description}}</p>
 </div>
 <hr>

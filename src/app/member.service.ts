@@ -19,10 +19,8 @@ export class MemberService {
   }
 
   //returns an observable that matches strings with Firebase
-  //Couldn't get it to render, used Work-around
-  //here just for referance
   getUserById(memberId: string) {
-    return this.database.object('members/' + memberId);
+    return this.database.object('/users/' + memberId);
   }
 
 
@@ -30,5 +28,19 @@ export class MemberService {
   addUser(newUser: User) {
     this.users.push(newUser);
   }
+
+  //update entries in Firebase
+  updateUser(localUpdatedUser) {
+    var userEntryInFireBase = this.getUserById(localUpdatedUser.$key);
+
+    console.log(userEntryInFireBase);
+    userEntryInFireBase.update({
+      name: localUpdatedUser.name,
+      role: localUpdatedUser.role,
+      tier: localUpdatedUser.tier,
+      description: localUpdatedUser.description
+    });
+  }
+
 
 }
