@@ -22,4 +22,9 @@ export class EditMemberComponent implements OnInit {
   updateMember(user: User) {
     this.memberService.updateUser(user);
   }
+  deleteMember(user: User) {
+    if (confirm("Are you sure you want to delete this user? Leaving is a capital punishment. This will unleash the drones.")) {
+      this.memberService.deleteUser(user);    
+    }
+  }
 }

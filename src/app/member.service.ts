@@ -42,5 +42,10 @@ export class MemberService {
     });
   }
 
+  deleteUser(deletedUser) {
+    var userEntryInFireBase = this.getUserById(deletedUser.$key);
+    userEntryInFireBase.remove();
+  }
+
 
 }
