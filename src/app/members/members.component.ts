@@ -12,6 +12,7 @@ import { User } from '../user.model';
 })
 export class MembersComponent implements OnInit {
   users: FirebaseListObservable<any[]>;
+  tierFilter: string = "Tier 1";
 
   constructor(
     private router: Router, private memberService: MemberService

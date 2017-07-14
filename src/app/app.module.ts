@@ -12,6 +12,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { MembersComponent } from './members/members.component';
 import { AboutComponent } from './about/about.component';
 import { MemberDetailsComponent } from './member-details/member-details.component';
+import { TierPipe } from './tier.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,6 +28,7 @@ export const firebaseConfig = {
     MembersComponent,
     AboutComponent,
     MemberDetailsComponent,
+    TierPipe,
   ],
   imports: [
     BrowserModule,

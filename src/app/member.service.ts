@@ -17,18 +17,7 @@ export class MemberService {
   }
 
   getUserById(memberId: string) {
-  return this.database.object('members/' + memberId);
-  }
-
-  getUserByMatchedId(memberId: string) {
-    return this.users.subscribe(user => {
-      user.forEach(data => {
-        if (data.$key === memberId) {
-          console.log(data);
-          return data;
-        }
-      });
-    });
+    return this.database.object('members/' + memberId);
   }
 
 }

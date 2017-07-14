@@ -27,11 +27,13 @@ export class MemberDetailsComponent implements OnInit {
      this.memberId = urlParameters['id'];
    });
    // This was a bust.
+   //this.memberToDisplay = this.memberService.getMemberById(this.memberId);
+
+   //Work-around
    this.users = this.memberService.getUsers();
    this.users.subscribe(user => {
      user.forEach(data => {
        if (data.$key === this.memberId) {
-         console.log(data);
          this.memberToDisplay = data;
        }
      });
