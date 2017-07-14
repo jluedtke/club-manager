@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: #FAFFFD;
+  font-family: 'Teko';
+  position: absolute;
+  bottom: 0%;
+  background-image: url(/src/img/background.png);
+}
