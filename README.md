@@ -17,8 +17,23 @@
 1. Go to the <a href="https://github.com/jluedtke/club-manager">GitHub Repository</a>
 2. Clone repository on to your machine
 3. In the Terminal (Powershell for Windows), navigate to the project directory. (Usually /Users/User_Name/Desktop/club-manager)
-4. Use the commands in order, "npm install", "bower install", and "ng serve"
-5. Follow on-screen instructions.
+4. Use the commands in order, "npm install", "bower install"
+5. Create "api-keys.ts" inside of the src/app/ folder
+6. Navigate to Firebase inside of your internet browser.
+7. Create your firebase database, and in the top left corner of the screen, click "Overview".
+8. Click "Add Firebase to my Web App".
+9. Inside of api-keys.ts, copy this text: "
+export var masterFirebaseConfig = {
+  apiKey: "XXXX",
+  authDomain: "XXXX",
+  databaseURL: "XXXX",
+  projectId: "XXXX",
+  storageBucket: "XXXX",
+  messagingSenderId: "XXXX"
+}
+10. Replace "XXXX" with the information you obtained from Firebase.
+11. Run "ng serve"
+12. Follow on-screen instructions.
 
 ## Known Bugs
 None at this time
